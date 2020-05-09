@@ -8,90 +8,60 @@
       <title>Some Div Tests.</title>
     <style>
     body, html {
-      width: 100%;
-      height: 100%;
       background-color:yellow;
-    }
-
-    .title-image {
-      display: block;
-      height: 40vh;
-      width: 100%;
       text-align: center;
-      object-fit: scale-down;
-
     }
 
     #input-form{
-      padding-top: 25px;
-      display: inline-block;
-      text-align: center;
       font-family: 'Gentium Basic', serif;
       font-size: 22px;
-      width: 40%;
-      vertical-align: top;
-      /* background-color:green;
-      height: 75vh; */
-    }
-
-    #side-block{
-      display: inline-block;
-      height: 75vh;
-      width: 30%;
-      vertical-align: top;
     }
     </style>
 
     </head>
     <body>
-      <div class="container">
-        <div class="title-image">
-          <img src="Static/Squash_Title_Large.png">
+
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <img src="Static/Squash_Title_Large.png" alt="SQuASH">
         </div>
-      </div><!--
-
-   --><div id="side-block">
-      </div><!--
-
-    --><div id="input-form">
-        <form action="/" id="generate" method="post">
-          Term to search:
-          <input id="searchTerm" name="searchTerm" placeholder="i.e 'bananas'" type="text">
-          <br>
-          <br>
-          <label for="start_date">Start Date:</label>
-            <input type="date" id="start_date" name="start_date" min="2017-01-01">
-          <br>
-          <label for="end_date">End Date:</label>
-            <input type="date" id="end_date" name="end_date" min="2017-01-02">
-          <br>
-          <br>
-          <label class="radio-inline">
-            <input type="radio" name="term_period" value="day" checked> Day
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="term_period" value="week"> Week
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="term_period" value="month">Month
-          </label>
-          <br>
-          <br>
-          <br>
-          /r/
-          <input name="subreddit0" id="subreddit0" placeholder="Subreddit 0" type="text">
-          <button class="btn btn-warning" id="addSubreddit" type="button">Add Another Subreddit</button>
-          <br>
-          <br>
-          <br>
-          <button class="btn btn-lg btn-warning" id="generate_button" type="submit">Generate!</button>
-        </form>
-
-      </div><!--
-
-      --><div id="side-block">
       </div>
 
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6" id="input-form">
+            <form action="/" id="generate" method="post">
+              Term to search:
+              <input id="searchTerm" name="searchTerm" placeholder="i.e 'bananas'" type="text">
+              <br>
+              <br>
+              <label for="start_date">Start Date:</label>
+                <input type="date" id="start_date" name="start_date" min="2017-01-01">
+              <br>
+              <label for="end_date">End Date:</label>
+                <input type="date" id="end_date" name="end_date" min="2017-01-02">
+              <br>
+              <label class="radio-inline">
+                <input type="radio" name="term_period" value="day" checked> Day
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="term_period" value="week"> Week
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="term_period" value="month">Month
+              </label>
+              <br>
+              <br>
+              /r/
+              <input name="subreddit0" id="subreddit0" placeholder="Subreddit 0" type="text">
+              <button class="btn btn-warning" id="addSubreddit" type="button">Add Another Subreddit</button>
+              <br>
+              <br>
+              <button class="btn btn-lg btn-warning" id="generate_button" type="submit">Generate!</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </body>
 
 
