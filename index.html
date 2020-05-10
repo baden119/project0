@@ -10,6 +10,7 @@
     body, html {
       background-color:yellow;
       text-align: center;
+      height:100%;
     }
 
     #input-form{
@@ -35,39 +36,41 @@
       </div>
 
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-6" id="input-form">
-            <form action="/" id="generate" method="post">
-              Term to search:
-              <input id="searchTerm" name="searchTerm" placeholder="i.e 'bananas'" type="text">
-              <br>
-              <br>
+        <!-- <div class="row justify-content-center"> -->
+          <form>
+            <div class="form-group">
+              <label for="searchTerm">Term to search:</label>
+              <input type="text" class="form-control" id="searchTerm" placeholder="Query">
+            </div>
+
+            <div class="form-check">
               <label for="start_date">Start Date:</label>
-                <input type="date" id="start_date" name="start_date" min="2017-01-01">
-              <br>
+              <input type="date" class="form-control" id="start_date" name="start_date" min="2017-01-01">
+            </div>
+
+            <div class="form-check">
               <label for="end_date">End Date:</label>
-                <input type="date" id="end_date" name="end_date" min="2017-01-02">
-              <br>
-              <label class="radio-inline">
-                <input type="radio" name="term_period" value="day" checked> Day
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="term_period" value="week"> Week
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="term_period" value="month">Month
-              </label>
-              <br>
-              <br>
-              /r/
-              <input name="subreddit0" id="subreddit0" placeholder="Subreddit 0" type="text">
-              <button class="btn btn-warning" id="addSubreddit" type="button">Add Another Subreddit</button>
-              <br>
-              <br>
-              <button class="btn btn-lg btn-warning" id="generate_button" type="submit">Generate!</button>
-            </form>
-          </div>
-        </div>
+              <input type="date" class="form-control" id="end_date" name="end_date" min="2017-01-02">
+            </div>
+
+            <small id="term_period_help" class="form-text text-muted">Analyze by:</small>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="term_period" id="term_period_day" value="day" checked>
+              <label class="form-check-label" for="term_period_day">Day</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="term_period" id="term_period_week" value="week">
+              <label class="form-check-label" for="term_period_week">Week</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="term_period" id="term_period_month" value="month">
+              <label class="form-check-label" for="term_period_month">Month</label>
+            </div>
+            <br>
+
+            <button type="submit" class="btn bth-lg btn-warning" id="generate_button">Submit</button>
+
+          </form>
       </div>
     </body>
 
