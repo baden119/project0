@@ -4,6 +4,7 @@
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital@1&display=swap" rel="stylesheet">
       <title>Some Div Tests.</title>
     <style>
     body, html {
@@ -14,11 +15,17 @@
     </head>
     <body>
 
-      <!-- <div class="container-fluid">
+      <div class="container-fluid">
         <div class="row justify-content-center">
-          <img src="Static/Squash_Title_Large.png" alt="SQuASH">
+          <img src="Static/Squash_Title_XS.png" alt="SQuASH">
         </div>
-      </div> -->
+      </div>
+
+      <div class="container">
+        <div class="text-nowrap" style="font-size:4vw; font-family: 'Gentium Basic', serif;">
+          <p>Simple Quantative Analyzer of Submission History</p>
+        </div>
+      </div>
 
       <div class="container">
           <form>
@@ -52,6 +59,11 @@
             </div>
             <br>
 
+            <div class="form-group">
+              <input type="text" class="form-control" id="subreddit0" placeholder="Subreddit 0">
+              <button type="button" class="btn btn-warning" id="addSubreddit">Add Another Subreddit</button>
+            </div>
+            <br>
             <button type="submit" class="btn bth-lg btn-warning" id="generate_button">Submit</button>
 
           </form>
