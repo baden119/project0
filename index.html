@@ -29,9 +29,11 @@
 
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <img src="static/Squash_Title_XS" alt="SQuASH"
+          <img src="Static/Squash_Title_Small.png" alt="SQuASH!!">
+
+          <!-- <img src="static/Squash_Title_XS" alt="SQuASH"
             srcset="Static/Squash_W_160.png 160w, Static/Squash_W_320.png 320w, Static/Squash_W_640.png 640w, Static/Squash_W_1280.png 1280w">
-            sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px">
+            sizes="(max-width: 480px) 100vw, (max-width: 900px) 33vw, 254px"> -->
         </div>
       </div>
 
@@ -42,49 +44,53 @@
       </div>
 
       <div class="container">
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" id="searchTerm" placeholder="Enter term to Search...">
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="searchTerm" placeholder="Enter term to Search...">
+              </div>
 
-            <div class="form-check">
-              <label for="start_date">Start Date:</label>
-              <input type="date" class="form-control" id="start_date" name="start_date" min="2017-01-01">
-            </div>
+              <div class="form-check">
+                <label for="start_date">Start Date:</label>
+                <input type="date" class="form-control" id="start_date" name="start_date" min="2017-01-01">
+              </div>
 
-            <div class="form-check">
-              <label for="end_date">End Date:</label>
-              <input type="date" class="form-control" id="end_date" name="end_date" min="2017-01-02">
-            </div>
+              <div class="form-check">
+                <label for="end_date">End Date:</label>
+                <input type="date" class="form-control" id="end_date" name="end_date" min="2017-01-02">
+              </div>
 
-            <small id="term_period_help" class="form-text text-muted">Analyze by:</small>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="term_period" id="term_period_day" value="day" checked>
-              <label class="form-check-label" for="term_period_day">Day</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="term_period" id="term_period_week" value="week">
-              <label class="form-check-label" for="term_period_week">Week</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="term_period" id="term_period_month" value="month">
-              <label class="form-check-label" for="term_period_month">Month</label>
-            </div>
-            <br>
-            <br>
-            <div class="form-group">
-              <small id="subreddit_help" class="form-text text-muted">Select one or more subreddits.</small>
-              <input type="text" class="form-control" id="subreddit0" placeholder="Subreddit 0">
+              <small id="term_period_help" class="form-text text-muted">Analyze by:</small>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="term_period" id="term_period_day" value="day" checked>
+                <label class="form-check-label" for="term_period_day">Day</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="term_period" id="term_period_week" value="week">
+                <label class="form-check-label" for="term_period_week">Week</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="term_period" id="term_period_month" value="month">
+                <label class="form-check-label" for="term_period_month">Month</label>
+              </div>
               <br>
-              <button type="button" class="btn btn-warning" id="addSubreddit"><del>Add Another Subreddit</del></button>
-              <small id="subreddit_help" class="form-text text-muted">Disabled Temporarily.</small>
-            </div>
-            <br>
-            <!-- Submit Button Disabled for now. -->
-            <!-- <button type="submit" class="btn bth-lg btn-warning" id="generate_button">Submit</button> -->
-              <a href="results.html" class="btn btn-warning" role="button">Example Graph</a>
-            <a href="error.html" class="btn btn-warning" role="button">Example Error</a>
-          </form>
+              <br>
+              <div class="form-group">
+                <small id="subreddit_help" class="form-text text-muted">Select one or more subreddits.</small>
+                <input type="text" class="form-control" id="subreddit0" placeholder="Subreddit 0">
+                <br>
+                <button type="button" class="btn btn-warning" id="addSubreddit"><del>Add Another Subreddit</del></button>
+                <small id="subreddit_help" class="form-text text-muted">Disabled Temporarily.</small>
+              </div>
+              <br>
+              <!-- Submit Button Disabled for now. -->
+              <!-- <button type="submit" class="btn bth-lg btn-warning" id="generate_button">Submit</button> -->
+                <a href="results.html" class="btn btn-warning" role="button">Example Graph</a>
+              <a href="error.html" class="btn btn-warning" role="button">Example Error</a>
+            </form>
+          </div>
+        </div>
       </div>
     </body>
 
