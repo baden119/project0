@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"// _config.scss\n$font-stack: Arial, Helvetica, sans-serif;\n$background-color: yellow;\n\nbody {\n  background-color: $background-color;\n  text-align: center;\n  // font-family: $font-stack;\n  // line-height: 1.6;\n}\n"
+	],
+	"names": [],
+	"mappings": ";AAIA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAHC,MAAM;EAIvB,UAAU,EAAE,MAAM;CAGnB"
+}
