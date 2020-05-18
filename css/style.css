@@ -1,11 +1,11 @@
-/* line 9, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 11, ../../web50/shop/0/t01/test01/scss/style.scss */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* line 15, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 17, ../../web50/shop/0/t01/test01/scss/style.scss */
 body {
   background-color: yellow;
   text-align: center;
@@ -13,23 +13,23 @@ body {
   line-height: 1.6;
 }
 
-/* line 22, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 24, ../../web50/shop/0/t01/test01/scss/style.scss */
 a {
   text-decoration: none;
   color: DodgerBlue;
 }
 
-/* line 27, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 29, ../../web50/shop/0/t01/test01/scss/style.scss */
 a:hover {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
-/* line 32, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 34, ../../web50/shop/0/t01/test01/scss/style.scss */
 .butts, .butts-small, .butts-nav {
   display: inline-block;
   margin: 15px;
-  color: black;
+  color: #000;
   font-size: 18px;
   padding: 9px 15px;
   border-radius: 20px;
@@ -38,13 +38,13 @@ a:hover {
   border-style: outset;
 }
 
-/* line 43, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 45, ../../web50/shop/0/t01/test01/scss/style.scss */
 .butts:hover, .butts-small:hover, .butts-nav:hover {
   transform: scale(0.98);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 54, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 56, ../../web50/shop/0/t01/test01/scss/style.scss */
 .butts-small {
   font-size: 18px;
   padding: 10px;
@@ -52,7 +52,7 @@ a:hover {
   margin: 10px;
 }
 
-/* line 62, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 64, ../../web50/shop/0/t01/test01/scss/style.scss */
 .butts-nav {
   font-size: 14px;
   padding: 5px;
@@ -60,22 +60,40 @@ a:hover {
   margin: 0;
 }
 
-/* line 70, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 72, ../../web50/shop/0/t01/test01/scss/style.scss */
 .button-group {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* line 76, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 78, ../../web50/shop/0/t01/test01/scss/style.scss */
 .docs {
   text-align: left;
   font-family: Didot, serif;
 }
 
-/* line 81, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 83, ../../web50/shop/0/t01/test01/scss/style.scss */
 .results {
-  border: 5px outset #ffc107;
+  border: 4px outset #ffc107;
+}
+
+/* line 88, ../../web50/shop/0/t01/test01/scss/style.scss */
+nav {
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+}
+
+/* line 95, ../../web50/shop/0/t01/test01/scss/style.scss */
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/* line 100, ../../web50/shop/0/t01/test01/scss/style.scss */
+li {
+  padding: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
