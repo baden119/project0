@@ -1,11 +1,11 @@
-/* line 11, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 10, ../../web50/shop/0/t01/test01/scss/style.scss */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* line 17, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 16, ../../web50/shop/0/t01/test01/scss/style.scss */
 body {
   background-color: yellow;
   text-align: center;
@@ -13,23 +13,23 @@ body {
   line-height: 1.6;
 }
 
-/* line 24, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 23, ../../web50/shop/0/t01/test01/scss/style.scss */
 a {
   text-decoration: none;
   color: DodgerBlue;
 }
 
-/* line 29, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 28, ../../web50/shop/0/t01/test01/scss/style.scss */
 a:hover {
   text-decoration: none;
-  color: #000;
+  color: black;
 }
 
-/* line 34, ../../web50/shop/0/t01/test01/scss/style.scss */
-.butts, .butts-small, .butts-nav {
+/* line 33, ../../web50/shop/0/t01/test01/scss/style.scss */
+.button, .button-small, #uniquie_button, .button-nav {
   display: inline-block;
   margin: 15px;
-  color: #000;
+  color: black;
   font-size: 18px;
   padding: 9px 15px;
   border-radius: 20px;
@@ -39,61 +39,111 @@ a:hover {
 }
 
 /* line 45, ../../web50/shop/0/t01/test01/scss/style.scss */
-.butts:hover, .butts-small:hover, .butts-nav:hover {
+.button:hover, .button-small:hover, #uniquie_button:hover, .button-nav:hover {
   transform: scale(0.98);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* line 56, ../../web50/shop/0/t01/test01/scss/style.scss */
-.butts-small {
-  font-size: 18px;
-  padding: 10px;
+.button-small {
+  font-size: 14px;
+  padding: 5px 8px;
   border-radius: 15px;
-  margin: 10px;
+  margin: 5px;
 }
 
 /* line 64, ../../web50/shop/0/t01/test01/scss/style.scss */
-.butts-nav {
+#uniquie_button {
+  background-color: green;
+  border-radius: 50%;
+}
+
+/* line 70, ../../web50/shop/0/t01/test01/scss/style.scss */
+.button-nav {
   font-size: 14px;
   padding: 5px;
   border-radius: 10px;
   margin: 0;
 }
 
-/* line 72, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 78, ../../web50/shop/0/t01/test01/scss/style.scss */
 .button-group {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* line 78, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 84, ../../web50/shop/0/t01/test01/scss/style.scss */
 .docs {
   text-align: left;
   font-family: Didot, serif;
 }
 
-/* line 83, ../../web50/shop/0/t01/test01/scss/style.scss */
-.results {
-  border: 4px outset #ffc107;
+/* line 89, ../../web50/shop/0/t01/test01/scss/style.scss */
+.error-text {
+  padding: 20px 0 0 0;
+  font-size: 2vw;
 }
 
-/* line 88, ../../web50/shop/0/t01/test01/scss/style.scss */
+/* line 94, ../../web50/shop/0/t01/test01/scss/style.scss */
+.form-group {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+}
+
+/* line 101, ../../web50/shop/0/t01/test01/scss/style.scss */
+.results {
+  border: 5px outset #ffc107;
+}
+
+/* line 105, ../../web50/shop/0/t01/test01/scss/style.scss */
+.table {
+  background-color: #ffff66;
+}
+
+/* line 109, ../../web50/shop/0/t01/test01/scss/style.scss */
 nav {
   display: flex;
   align-items: right;
   justify-content: space-between;
 }
 
-/* line 95, ../../web50/shop/0/t01/test01/scss/style.scss */
-ul {
+/* line 114, ../../web50/shop/0/t01/test01/scss/style.scss */
+nav ul {
   display: flex;
   list-style-type: none;
 }
 
-/* line 100, ../../web50/shop/0/t01/test01/scss/style.scss */
-li {
+/* line 119, ../../web50/shop/0/t01/test01/scss/style.scss */
+nav li {
   padding: 15px;
+}
+
+@media (max-width: 600px) {
+  /* line 128, ../../web50/shop/0/t01/test01/scss/style.scss */
+  .docs img {
+    display: none;
+  }
+  /* line 133, ../../web50/shop/0/t01/test01/scss/style.scss */
+  .button {
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius: 15px;
+    margin: 5px;
+  }
+}
+
+@media print {
+  /* line 142, ../../web50/shop/0/t01/test01/scss/style.scss */
+  .no-print {
+    display: none;
+  }
+  /* line 145, ../../web50/shop/0/t01/test01/scss/style.scss */
+  .results {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
